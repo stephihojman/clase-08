@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .formulario,
+      .grupo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header {
+        background-color: rgb(107, 155, 218);
+      }
+
+      html,
+      body,
+      .formulario,
+      .grupo,
+      #nombre,
+      #apellido,
+      #mail {
+        height: 100vh;
+      }
+
+      .boton {
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="formulario">
+      <header>
+        <p>Estudiá con nosotrxs</p>
+        <a class="boton" href="">Home</a><a class="boton" href="">About</a
+        ><a class="boton" href="">Contact</a>
+      </header>
+      <form class="formulario" action="">
+        <div class="grupo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" name="Nombre" />
+          <label for="apellido">Apellido</label>
+          <input id="apellido" type="text" name="Apellido" />
+          <label for="mail">Mail</label>
+          <input id="mail" type="email" name="Email" />
+          <button>Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
